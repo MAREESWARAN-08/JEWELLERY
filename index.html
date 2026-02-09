@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMIRTHA JEWELLERY | Premium Collections</title>
+    
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LIVE GOLD TICKER -->
+    <div class="gold-ticker">
+        <div class="live-dot"></div>
+        <span>LIVE GOLD RATE: </span>
+        <span id="gold-price-display">₹395000/24kt</span>
+    </div>
+
+    <!-- WELCOME ANIMATION SCREEN -->
+    <div id="welcome-screen">
+        <h1 class="welcome-text">AMIRTHA JEWELLERY </h1>
+        <p class="welcome-sub">Crafting Elegance Since 2000</p>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav id="main-nav">
+        <div class="logo">AJ</div>
+        <div class="nav-links">
+            <button onclick="navigateTo('categories')" class="active">Collections</button>
+            <button onclick="navigateTo('services')">Our Work</button>
+            <button onclick="navigateTo('contact')">Contact</button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+        
+        <!-- 1. CATEGORIES PAGE -->
+        <section id="categories" class="active-section">
+            <div class="section-header">
+                <h2>Our Collections</h2>
+                <p>Exclusive designs for every occasion</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+                <button class="filter-btn" onclick="filterProducts('ring', this)">Rings</button>
+                <button class="filter-btn" onclick="filterProducts('necklace', this)">Necklaces</button>
+                <button class="filter-btn" onclick="filterProducts('earring', this)">Earrings</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Ring -->
+                <div class="product-card" data-category="ring">
+                    <img src="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\IMAGES\e922bb4e-06a5-4c3b-a614-81e0163f01a0.jpg" alt="Gold Ring">
+                    <div class="product-info">
+                        <h3>Royal Emerald Ring</h3>
+                        <p>22KT Gold | Engraved</p>
+                    </div>
+                </div>
+                <!-- Necklace -->
+                <div class="product-card" data-category="necklace">
+                    <img src="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\IMAGES\vaibhav-nagare-G3Hrl6WzQYQ-unsplash.jpg" alt="Gold Necklace">
+                    <div class="product-info">
+                        <h3>Lakshmi Haram</h3>
+                        <p>Traditional Design</p>
+                    </div>
+                </div>
+                <!-- Earring -->
+                <div class="product-card" data-category="earring">
+                    <img src="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\IMAGES\saronita-mmvL8xG1l2E-unsplash.jpg" alt="Jhumka">
+                    <div class="product-info">
+                        <h3>Antique Jhumka</h3>
+                        <p>Temple Jewellery</p>
+                    </div>
+                </div>
+                 <!-- Ring -->
+                 <div class="product-card" data-category="ring">
+                    <img src="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\IMAGES\3e302e56-7a00-46dc-87f7-a315640350ce.jpg" alt="Diamond Ring">
+                    <div class="product-info">
+                        <h3>Solitaire Diamond</h3>
+                        <p>18KT White Gold</p>
+                    </div>
+                </div>
+                <!-- Necklace -->
+                <div class="product-card" data-category="necklace">
+                    <img src="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\IMAGES\vaibhav-nagare-e8LrvEAZqYM-unsplash.jpg" alt="Choker">
+                    <div class="product-info">
+                        <h3>Diamond Choker</h3>
+                        <p>Modern Bridal Set</p>
+                    </div>
+                </div>
+                 <!-- Earring -->
+                 <div class="product-card" data-category="earring">
+                    <img src="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\IMAGES\mayank-gehlot-lsxBmX8Hmwc-unsplash.jpg" alt="Studs">
+                    <div class="product-info">
+                        <h3>Gold Studs</h3>
+                        <p>Daily Wear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SERVICES PAGE -->
+        <section id="services">
+            <div class="section-header">
+                <h2>Our Expertise</h2>
+                <p>What we do best</p>
+            </div>
+            
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="icon">✦</div>
+                    <h3>Gold Engraving</h3>
+                    <p>Custom name engraving, religious symbols, and intricate patterns done by hand.</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon">✒</div>
+                    <h3>Custom Design</h3>
+                    <p>Bring your imagination to life. We sketch and craft bespoke jewellery just for you.</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon">♕</div>
+                    <h3>Restoration</h3>
+                    <p>We restore old antique jewellery to its original glory with careful polishing.</p>
+                </div>
+                  <div class="service-box">
+                    <div class="icon">✦</div>
+                    <h3>Gold polishing</h3>
+                   <p>Gold polishing is the process of cleaning and shining gold items to restore their brightness and smooth finish..</p>
+                </div>
+                  <div class="service-box">
+                    <div class="icon">♕</div>
+                    <h3>Gold colouring</h3>
+                   <p>Gold colouring is the process of giving a gold item a rich, shiny color to enhance its appearance.</p> 
+                </div>
+                  <div class="service-box">
+                    <div class="icon">✒</div>
+                    <h3>THALIKU THANGAM URUKUTHAL</h3>
+                    <p>Melting gold for a thali is the process of melting gold and shaping it into the required form to make a thali ornament.</p>
+                     <a href="C:\Users\MAREESWARAN\Desktop\AMIRTHA JEWELLERY\Doc1.pdf" class="btn" download>DOWNLOAD THIS FOR MORE DETAILS</a>
+    </div>
+  </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CONTACT PAGE -->
+        <section id="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Visit our showroom or message us</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Showroom Address</h3>
+                    <p class="address-text">
+                        123,SEA Street,<br>
+                        COLOMBO-13, Sea Street,<br>
+                        Srilanka.<br><br>
+                        <strong>Phone:</strong> +94123456789<br>
+                        <strong>Email:</strong> info@amirthagold.com
+                    </p>
+                    <div class="map-placeholder">
+                        [ Google Map Placeholder ]
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form onsubmit="handleFormSubmit(event)">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Notification Element -->
+    <div id="toast">Message Sent Successfully!</div>
+
+    <!-- Linking External JS File -->
+    <script src="script.js"></script>
+</body>
+</html>
